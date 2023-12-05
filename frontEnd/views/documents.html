@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documents</title>
+  <link rel="stylesheet" href="./styles/documents-style.css">
+</head>
+<body>
+  <div class="header">
+    <nav>
+      <ul>
+        <li><a href="/documents">Documents</a></li>
+        <li><a href="/employee">Employee</a></li>
+        <li><a href="/customer">Customer</a></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <h1>Documents</h1>
+    <ul class="document-list">
+      <li class="document-item">
+        <span class="document-title">Customer Orders</span>
+        <ul class="sub-document-list">
+          <li><a href="pdfs/customer_orders_1.pdf" target="_blank">Order 1</a></li>
+          <li><a href="pdfs/customer_orders_2.pdf" target="_blank">Order 2</a></li>
+          <!-- Add more sub-documents as needed -->
+        </ul>
+      </li>
+      <li class="document-item">
+        <span class="document-title">Invoices</span>
+        <ul class="sub-document-list">
+          <li><a href="pdfs/invoices_1.pdf" target="_blank">Invoice 1</a></li>
+          <li><a href="pdfs/invoices_2.pdf" target="_blank">Invoice 2</a></li>
+          <!-- Add more sub-documents as needed -->
+        </ul>
+      </li>
+      <li class="document-item">
+        <span class="document-title">Inventory</span>
+        <ul class="sub-document-list">
+          <li><a href="pdfs/inventory_1.pdf" target="_blank">Item 1</a></li>
+          <li><a href="pdfs/inventory_2.pdf" target="_blank">Item 2</a></li>
+          <!-- Add more sub-documents as needed -->
+        </ul>
+      </li>
+      <!-- Add more documents as needed -->
+    </ul>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const documentItems = document.querySelectorAll('.document-item');
+
+      documentItems.forEach(item => {
+        item.addEventListener('click', function () {
+          this.classList.toggle('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>

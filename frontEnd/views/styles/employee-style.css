@@ -1,0 +1,104 @@
+.header {
+  background-color: #333; /* Add your preferred background color */
+  overflow: hidden;
+}
+
+.header nav {
+  float: right; /* Align the navigation to the right */
+}
+
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header li {
+  float: left; /* Float the list items to the left */
+  margin-right: 20px; /* Add some spacing between the list items */
+}
+
+.header a {
+  display: block;
+  color: white; /* Add your preferred text color */
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.header a:hover {
+  background-color: #ddd; /* Add a background color on hover */
+  color: black; /* Change text color on hover */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.employee-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.employee-list li {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 1200px;
+}
+
+.employee-name,
+.employee-salary,
+.employee-address,
+.employee-phone,
+.employee-permission {
+  flex-basis: calc(16.66% - 10px);
+  margin-bottom: 10px;
+}
+
+.employee-labels{
+  flex-basis: calc(16.66% - 10px);
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.employee-name {
+  font-weight: bold;
+}
+
+.employee-salary {
+  color: #007bff;
+}
+
+.employee-permission {
+  font-weight: bold;
+}
+
+.employee-permission[data-level="admin"] {
+  color: #dc3545; /* Red for admin */
+}
+
+.employee-permission[data-level="advanced"] {
+  color: #ffc107; /* Yellow for advanced */
+}
+
+.employee-permission[data-level="user"] {
+  color: #28a745; /* Green for user */
+}

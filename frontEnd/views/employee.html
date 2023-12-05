@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Information</title>
+  <link rel="stylesheet" href="./styles/employee-style.css">
+</head>
+<body>
+  <div class="header">
+    <nav>
+      <ul>
+        <li><a href="/documents">Documents</a></li>
+        <li><a href="/employee">Employee</a></li>
+        <li><a href="/customer">Customer</a></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+  <include src="header.html"></include>
+  <div class="container">
+    <h1>Employee Information</h1>
+    <ul class="employee-list">
+      <!-- Fake employees for demonstration purposes -->
+      <li>
+        <span class="employee-labels">Name</span>
+        <span class="employee-labels">Salary</span>
+        <span class="employee-labels">Address</span>
+        <span class="employee-labels">Phone Number</span>
+        <span class="employee-labels">Permission Level</span>
+      </li>
+      <li>
+        <span class="employee-name">John Doe</span>
+        <span class="employee-salary">$60,000</span>
+        <span class="employee-address">123 Main St</span>
+        <span class="employee-phone">555-1234</span>
+        <span class="employee-permission" data-level="admin">Admin</span>
+      </li>
+      <li>
+        <span class="employee-name">Jane Smith</span>
+        <span class="employee-salary">$45,000</span>
+        <span class="employee-address">456 Oak Ave</span>
+        <span class="employee-phone">555-5678</span>
+        <span class="employee-permission" data-level="user">User</span>
+      </li>
+      <li>
+        <span class="employee-name">Alex Johnson</span>
+        <span class="employee-salary">$45,000</span>
+        <span class="employee-address">456 Oak Ave</span>
+        <span class="employee-phone">555-5678</span>
+        <span class="employee-permission" data-level="advanced">advanced</span>
+      </li>
+      <li>
+        <span class="employee-name">Emily Chapman</span>
+        <span class="employee-salary">$45,000</span>
+        <span class="employee-address">456 Oak Ave</span>
+        <span class="employee-phone">555-5678</span>
+        <span class="employee-permission" data-level="user">User</span>
+      </li>
+      <!-- Add more fake employees as needed -->
+    </ul>
+  </div>
+</body>
+</html>

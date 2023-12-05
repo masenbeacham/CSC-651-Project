@@ -1,0 +1,93 @@
+.header {
+  background-color: #333; /* Add your preferred background color */
+  overflow: hidden;
+}
+
+.header nav {
+  float: right; /* Align the navigation to the right */
+}
+
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header li {
+  float: left; /* Float the list items to the left */
+  margin-right: 20px; /* Add some spacing between the list items */
+}
+
+.header a {
+  display: block;
+  color: white; /* Add your preferred text color */
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.header a:hover {
+  background-color: #ddd; /* Add a background color on hover */
+  color: black; /* Change text color on hover */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.document-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.document-item {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.document-title {
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.sub-document-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  display: none;
+}
+
+.sub-document-list li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.active .sub-document-list {
+  display: block;
+}
