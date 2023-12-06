@@ -1,16 +1,32 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('../config/database'); // Your database configuration
 
 const Employee = sequelize.define('Employee', {
-  firstName: {
+  employee_id: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+    primaryKey: true,
+    autoIncrement: true,
+  },
+  name: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  lastName: {
+  salary: {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  // Define other fields here
+  address: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  phone_number: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  permission_level: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
 });
 
 module.exports = Employee;
